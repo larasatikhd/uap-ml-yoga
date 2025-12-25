@@ -7,6 +7,7 @@ Perbandingan hasil prediksi menggunakan model CNN, MobileNetV2, dan ResNet101 pa
 
 ## DESKRIPSI PROJECT 
 Proyek ini bertujuan untuk melakukan klasifikasi data citra pose yoga menggunakan beberapa model deep learning untuk mengenali berbagai jenis pose yoga dari gambar. Dataset yang digunakan diambil dari Kaggle dan terdiri dari 5.991 gambar dengan 107 kelas pose yoga yang berbeda. Setiap kelas memiliki jumlah gambar yang bervariasi, sehingga distribusi data bersifat tidak seimbang.
+
 Pada penelitian ini digunakan tiga model klasifikasi citra, yaitu:
 1.	Non-pretrained (CNN), yaitu model CNN yang dibuat dan dilatih dari awal tanpa menggunakan bobot awal (pretrained).
 2.	Pretrained 1 – MobileNetV2, yaitu model CNN yang sudah pernah dilatih sebelumnya pada dataset besar, sehingga mampu mengenali pola dasar pada gambar. Model ini bersifat ringan dan cepat, lalu disesuaikan kembali untuk mengenali pose yoga.
@@ -82,6 +83,7 @@ Setelah pelatihan selesai, masing-masing model disimpan agar dapat digunakan kem
 
 ## ALUR DASHBOARD WEB
 Aplikasi dashboard web ini digunakan untuk melakukan proses prediksi pose yoga secara interaktif dan real-time. Tanpa perlu melakukan training ulang, model dapat langsung dipilih, gambar diunggah, serta hasil prediksi beserta gambar yang diupload dapat langsung dilihat.
+
 Berikut adalah langkah-langkah dalam menggunakan dashboard web:
 1.	Menampilkan model klasifikasi citra beserta implementasi masing-masing model yang tertera pada halaman beranda (home), yaitu CNN, MobileNetV2, dan ResNet101.
 2.	Memilih model yang ingin digunakan untuk melakukan prediksi.
@@ -91,7 +93,9 @@ Berikut adalah langkah-langkah dalam menggunakan dashboard web:
 
 ---
 ## 📈 Evaluasi Model
-Evaluasi model dilakukan untuk mengetahui kemampuan dari masing-masing model dalam melakukan klasifikasi citra pose yoga. Proses evaluasi ini bertujuan untuk membandingkan performa model CNN, MobileNetV2, dan ResNet101 berdasarkan hasil prediksi yang dihasilkan. Metrik evaluasi yang digunakan meliputi:
+Evaluasi model dilakukan untuk mengetahui kemampuan dari masing-masing model dalam melakukan klasifikasi citra pose yoga. Proses evaluasi ini bertujuan untuk membandingkan performa model CNN, MobileNetV2, dan ResNet101 berdasarkan hasil prediksi yang dihasilkan. 
+
+Metrik evaluasi yang digunakan meliputi:
 - **Akurasi** : Mengukur tingkat ketepatan model dalam mengklasifikasikan gambar.
 - **Grafik training dan validation** : Melihat proses pembelajaran model selama pelatihan.
 - **Confusion Matrix** : Mengetahui kesalahan prediksi antar kelas.
