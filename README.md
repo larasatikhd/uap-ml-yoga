@@ -198,7 +198,12 @@ pdm install           # Install seluruh dependency proyek
 pdm venv activate     # Aktifkan environment
 ```
 
-### 4. Menjalankan Notebook untuk Training Model
+### 4. Install requirements tambahan
+```bash
+pdm add -d -r requirements.txt
+```
+
+### 5. Menjalankan Notebook untuk Training Model
 ```bash
 pdm run jupyter notebook
 # Buka file notebook: notebooks/UAP_Yoga_Pose_Image_Classification.ipynb
@@ -209,7 +214,7 @@ Setelah notebook dijalankan, model hasil training otomatis tersimpan di folder m
 - models/model_mobilenetv2_yoga.h5
 - models/resnet101_model.keras
 
-### 5. Menjalankan Website (Streamlit)
+### 6. Menjalankan Website (Streamlit)
 ```bash
 pdm run streamlit run app.py
 # Buka browser di: http://localhost:8501
@@ -222,7 +227,7 @@ Cara Menggunakan Website
   - Hasil prediksi kelas pose yoga
   - Probabilitas Top-5 kelas
 
-### 6. Menghentikan Program
+### 7. Menghentikan Program
 ```bash 
 # Tekan CTRL + C pada terminal untuk menghentikan aplikasi Streamlit
 ````
